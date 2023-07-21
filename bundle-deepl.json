@@ -1,0 +1,15 @@
+{
+    "bundles": {
+        "bundle-deepl": {
+            "name": "bundle-deepl",
+            "bundle-file": "bundle-deepl",
+            "prefixes": {
+                "deepl": {
+                    "consumer": {
+                        "class": "bundles.deepl.DeepLConsumer"
+                    }
+                }
+            }
+        }
+    }
+}
