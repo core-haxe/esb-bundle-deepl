@@ -14,8 +14,9 @@ class DeepLConsumer implements IConsumer {
     public var bundle:IBundle;
     public function start(uri:Uri) {
         log.info('creating deepl consumer for ${uri.toString()}');
-        from(uri, message -> {
+        from(uri, (uri, message) -> {
             return new Promise((resolve, reject) -> {
+                resolve(message);
             });
         });
     }
